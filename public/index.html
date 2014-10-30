@@ -1,0 +1,33 @@
+<! DOCTYPE html>
+<html ng-app="lawyerApp">
+<head>
+	<title>Watch Time</title>
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+</head>
+<body ng-controller="mainController">
+	<h2>{{title}}</h2>
+
+	<table>
+		<thead>
+			<th>Name</th>
+			<th>Location</th>
+			<th>Record</th>
+			<th>Rate</th>
+		</thead>
+		<tbody>
+			<tr ng-repeat="lawyer in lawyers">
+				<td>{{lawyer.name}}</td>
+				<td>{{lawyer.location}}</td>
+				<td>{{lawyer.wins}} / {{lawyer.wins}}</td>
+				<td>{{lawyer.rate}}</td>
+			</tr>
+		</tbody>
+
+
+	<!-- SCRIPTS -->
+	<script type="text/javascript" src="js/angular.min.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+	<script type="text/javascript" src="js/mainController.js"></script>
+	<script type="text/javascript" src="js/mainService.js"></script>
+</body>
+</html>
